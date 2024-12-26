@@ -1,5 +1,8 @@
 import React from 'react'
 import './cards.css';
+
+import { FaWhatsapp } from "react-icons/fa";
+
 export default function card({item}) {
     const { id, title, author, price, img, rating } = item;
     return (
@@ -9,7 +12,7 @@ export default function card({item}) {
                 </div>
                 <div className='button_parent'>
                     <div className='btn-child'>
-                        <a href=''>Button</a>
+                        <a href=''>Order Whatsapp </a><FaWhatsapp />
                     </div>
                 </div>
             </div>
